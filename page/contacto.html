@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ejemplo de página web usando Bootstrap 5.">
+    <meta name="author" content="Franz">
+    <meta name="keywords" content="bootstrap, css, html, ejemplo, página web">
+    <title>AlmaStudio</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/miestilo.css">
+  </head>
+
+  <body class="body">    
+    <header>  
+       <nav class="navbar navbar-expand-lg">
+       <div class="container">
+        <a class="display-6 text-white" href="../index.html">
+          <h1 class="display-5 text-white fw-bold">AlmaStudio</h1></a>
+
+       <!--boton hamburguesa: solo visible en pantallas pequeñas-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="../index.html"><b>Inicio</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/nosotros.html"><b>Nosotros</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/Servicios.html"><b>Servicios</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/contacto.html"><b>Contacto</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>     
+    </header>
+
+    <main>
+
+    <!-- CONTACTO -->
+<section class="contacto py-5" id="contacto">
+    <div class="container" data-aos="zoom-in-down">
+        <h2 class="text-center fw-bold mb-5 animate__animated animate__bounce">Contáctanos</h2>
+        <div class="row g-5">
+
+            <!-- Información -->
+            <div class="col-lg-5" data-aos="zoom-in-left">
+                <h3>¿Hablamos?</h3>
+                <p>Si deseas impulsar tu negocio con análisis de datos, marketing digital o gestión administrativa, estaremos encantados de ayudarte.</p>
+                <p><i class="bi bi-geo-alt-fill"></i>Lima, Perú</p>
+                <p><i class="bi bi-envelope-fill"></i>@almastudio.com</p>
+                <p><i class="bi bi-telephone-fill"></i>+51 999 999 999</p>
+            </div>
+
+            <!-- Formulario -->
+
+            <div class="col-lg-7" data-aos="zoom-in-left">
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">Nombre</label>
+                      <input type="text" class="form-control" placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+            </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label">Servicio de interés</label>
+                        <select class="form-select">
+                            <option>Marketing Digital</option>
+                            <option>Analisis de datos</option>
+                            <option>Gestión Administrativa</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" rows="5" placeholder="Escriba aquí su mensaje..."></textarea>
+                    </div>
+                    <button class="btn btn-primary w-100">Enviar consulta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+    
+    <!-- fin pagina principal -->
+   <footer class="footer py-5">
+    <div class="container" data-aos="fade-up-left">
+        <div class="row">
+
+            <!-- Empresa -->
+            <div class="col-md-4" data-aos="flip-right">
+                <h3><b>AlmaStudio</b></h3>
+                <p>Transformamos datos, ideas y contenido en resultados.</p>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h4>Contacto</h4>
+                <p><i class="bi bi-geo-alt-fill"></i>
+                    Lima, Perú</p>
+                <p><i class="bi bi-envelope-fill"></i>
+                    contacto@almastudio.com</p>
+                <p><i class="bi bi-telephone-fill"></i>
+                    +51 999 999 999</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="text-center">
+            <a href="#">
+                <i class="bi bi-facebook fs-3 me-3"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram fs-3 me-3"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin fs-3"></i>
+            </a>
+        </div>
+
+        <p class="text-center mt-4">
+          <b>AlmaStudio</b>
+        </p>
+    </div>
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="https://web.whatsapp.com/"
+class="btn-whatsapp"
+target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+  </body>
+</html>
+  

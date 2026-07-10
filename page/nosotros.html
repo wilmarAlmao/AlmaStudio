@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ejemplo de página web usando Bootstrap 5.">
+    <meta name="author" content="Franz">
+    <meta name="keywords" content="bootstrap, css, html, ejemplo, página web">
+    <title>AlmaStudio</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/miestilo.css">
+  </head>
+
+  <body class="body">    
+    <header>  
+       <nav class="navbar navbar-expand-lg">
+       <div class="container">
+        <a class="display-6 text-white" href="../index.html">
+          <h1 class="display-5 text-white fw-bold">AlmaStudio</h1></a>
+
+       <!--boton hamburguesa: solo visible en pantallas pequeñas-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="../index.html"><b>Inicio</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/nosotros.html"><b>Nosotros</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/Servicios.html"><b>Servicios</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="../page/contacto.html"><b>Contacto</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>     
+    </header>
+
+    <main>
+        <section class="nosotros-banner py-5">
+           <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                   <span class="badge bienvenida"> SOBRE NOSOTROS</span>
+                     <h1 class="mt-3 animate__animated animate__pulse">Conectamos datos,creatividad y estrategia.</h1>
+                     <p class="mt-4 animate__animated animate__pulse">
+                      AlmaStudio nace con la misión de ayudar a empresas y emprendedores a tomar mejores decisiones mediante análisis de datos, marketing digital y soluciones administrativas.</p>
+               </div>
+               <div class="col-lg-6">
+               <img src="../dist/image/plan estrategico.jpeg" class="img-fluid rounded">
+               </div>
+               </div>
+               </div>
+               </section>
+
+               <!-- Seccion Nuestra historia-->
+               <section class="py-5">
+                <div class="container">
+                 <div class="row align-items-center">
+                   <div class="col-lg-6">
+                      <img src="dist/image/historia.jpg" class="img-fluid rounded"></div>
+                       <div class="col-lg-6"><h2 data-aos="zoom-in">Nuestra historia</h2>
+                         <p data-aos="zoom-in"> AlmaStudio nació con la idea de unir el análisis de datos, el marketing digital y la gestión administrativa en un solo lugar. Nuestro objetivo es ofrecer soluciones integrales que permitan a nuestros clientes crecer con información confiable y estrategias efectivas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!--Mision, Vision y valores-->
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <h2 class="text-center mb-5" data-aos="zoom-in"><b>Nuestra Esencia</b></h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card card-libro box-shadow p-4 text-center" data-aos="zoom-in">
+                                    <i class="bi bi-rocket-takeoff-fill fs-1"></i>
+                                    <h3>Mision</h3>
+                                    <p>Impulsar el crecimiento de nuestros clientes mediante soluciones estratégicas.</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card card-libro box-shadow p-4 text-center" data-aos="zoom-in">
+                                    <i class="bi bi-eye-fill fs-1"></i>
+                                    <h3>Vision</h3>
+                                    <p>Ser una empresa reconocida por su confianza y efectividad</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card card card-libro box-shadow p-4 text-center" data-aos="zoom-in">
+                                    <i class="bi bi-heart-fill fs-1"></i>
+                                    <h3>Valores</h3>
+                                    <p>Innovacion, Compromiso, Transparencia y Calidad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+    </main>
+    
+    <!-- fin pagina principal -->
+   <footer class="footer py-5">
+    <div class="container" data-aos="fade-up-left">
+        <div class="row">
+
+            <!-- Empresa -->
+            <div class="col-md-4">
+                <h3><b>AlmaStudio</b></h3>
+                <p>
+                    Transformamos datos, ideas y contenido
+                    en resultados.
+                </p>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-4">
+                <h4>Contacto</h4>
+                <p><i class="bi bi-geo-alt-fill"></i>
+                    Lima, Perú</p>
+                <p><i class="bi bi-envelope-fill"></i>
+                    contacto@almastudio.com</p>
+                <p><i class="bi bi-telephone-fill"></i>
+                    +51 999 999 999</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="text-center">
+            <a href="#">
+                <i class="bi bi-facebook fs-3 me-3"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-instagram fs-3 me-3"></i>
+            </a>
+            <a href="#">
+                <i class="bi bi-linkedin fs-3"></i>
+            </a>
+        </div>
+
+        <p class="text-center mt-4">
+          <b>AlmaStudio</b>
+        </p>
+    </div>
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="https://web.whatsapp.com/"
+class="btn-whatsapp"
+target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+  </body>
+</html>
+  

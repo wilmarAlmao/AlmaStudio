@@ -1,0 +1,438 @@
+/*DEFINICIÓN DE VARIABLES*/
+:root{
+    --color-oliva: rgb(94, 91, 69);
+    --color-crema: hsl(33, 31%, 93%);
+    --color-beige: #b79a71;
+    --color-celeste: #9fb7c9;
+
+    --font-size-titulos: 30px;
+}
+ 
+/*seccion bienvenida*/
+
+
+body{
+    /*USO DE LAS VARIABLES*/
+    background: rgb(94, 91, 69);
+    --font-size-titulos: 30px;
+}
+
+
+/*seccion estadisticas*/
+
+.estadisticas{
+    margin-top:80px;
+    padding:50px;
+    background:
+    #9fb7c9;
+    border-radius:20px;
+}
+
+.estadisticas .col-md-3{
+    transition: transform .3s ease;
+}
+
+.estadisticas .col-md-3:hover{
+    transform: translatex(-10px);
+}
+
+.btn-primary{
+    background-color:#9fb7c9;
+    border-color:#9fb7c9;
+
+    color: black;
+}
+
+.btn-primary:hover{
+    background-color:#9fb7c9;
+    border-color: #9fb7c9;
+}
+
+/*carrusel*/
+
+.card-libro{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-libro:hover{
+   transform: translateY(-10px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;  
+}
+
+.hr-border{
+    border-top: 4px solid white;
+}
+
+.card{
+    border: none;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+ 
+.h1, h3, h4, a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
+
+/*subrayado del logo*/
+a{
+    text-decoration: none;
+}
+
+/* POR QUÉ ELEGIRNOS */
+
+.porque-elegirnos{
+    background-color: var(--color-crema);
+}
+
+.porque-elegirnos h2{
+    color: black;
+}
+
+.ventaja-card{
+    background: white;
+    border-radius: 20px;
+    height: 100%;
+    transition: .4s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.ventaja-card:hover{
+    transform: translateY(-10px);
+}
+
+.ventaja-card i{
+    color: var(--color-oliva);
+}
+
+.ventaja-card h4{
+    color: black;
+}
+
+.ventaja-card p{
+    color: black;
+}
+
+/*preguntas frecuentes*/
+
+.preguntas-section{
+    background-color: var(--color-celeste);
+    border-radius:20px;
+}
+
+.preguntas-section h2{
+    color: black;
+}
+
+.accordion-button{
+    background-color: white;
+    color: var(--color-oliva);
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: var(--color-celeste);
+    color: white;
+}
+
+.accordion-body{
+    color: white;
+}
+
+.accordion-item{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+/*seccion servicios*/
+
+.servicios{
+    margin-top: 80px;
+    background-color: #f5f0e6;
+
+}
+
+
+
+p{font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.nav-link{
+    color: white;
+}
+
+.bienvenida{
+      background-color: #4f6d7a;
+    color:white;
+}
+ 
+/*tamaño de las imagenes*/
+
+.carousel{
+    width: 100%;
+}
+
+.card img{
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-item img{
+    height: 350px;
+    object-fit: cover;
+}
+
+/*seccion 3D*/
+
+.card-3d{
+    width: 100%;
+    height: 450px;
+    perspective: 1000px;
+}
+
+.card-3d-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+
+.card-3d:hover .card-3d-inner{
+    transform: rotateY(180deg);
+}
+ 
+.card-3d-front,
+.card-3d-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-3d-front img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-3d-front h3{
+    margin-top: 20px;
+    color: white;
+}
+
+.card-3d-back{
+    background: var(--color-crema);
+    color: black;
+    transform: rotateY(180deg);
+    padding: 30px;
+    text-align: center;
+}
+
+/* CONTACTO */
+
+.contacto{
+    background-color: var(--color-crema);
+}
+
+.contacto h2{
+    color: black;
+}
+
+.contacto h3{
+    color: black;
+}
+
+.contacto p{
+    color:black;
+}
+
+.contacto i{
+    color:var(--color-celeste);
+    margin-right:10px;
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:var(--color-celeste);
+    box-shadow:0 0 10px rgba(159,183,201,.4);
+}
+
+.contacto button{
+    background:var(--color-celeste);
+    border:none;
+}
+
+.contacto button:hover{
+    background:var(--color-oliva);
+}
+
+/* FOOTER */
+
+.footer{
+    background:#3f4631;
+    color:white;
+}
+
+.footer h3,
+.footer h4{
+    color:white;
+}
+
+.footer p,
+.footer li{
+    color:#ddd;
+}
+
+.footer ul{
+    padding-left:0;
+}
+
+.footer li{
+    margin-bottom:10px;
+}
+
+.footer a{
+    color:var(--color-celeste);
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:white;
+}
+
+.footer hr{
+    border-color:rgba(255,255,255,.2);
+}
+
+/* BOTÓN WHATSAPP */
+
+.btn-whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+    z-index:999;
+}
+
+.btn-whatsapp:hover{
+    background: #1ebe5d;
+    transform: scale(1.1);
+    color: white;
+}
+
+/*NOSOTROS.HTML*/
+
+
+.hero-nosotros{
+    background: var(--color-crema);
+    padding: 90px 0;
+}
+
+.hero-nosotros h1, h2, h3, h4{
+    color: black;
+}
+
+.hero-nosotros p{
+    color:black;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+
+/*banner de nosotros*/
+
+.nosotros-banner{
+    background:var(--color-crema);
+    color:black;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.nosotros-banner img{
+    border-radius:20px;
+}
+
+.card i{
+    color:#4f6d7a;
+}
+
+.navbar-toggler{
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+/*pagina servicios*/
+
+.SeccionServicios{
+    margin-top:80px;
+    padding:50px;
+    background:
+    #9fb7c9;
+    border-radius:20px;
+}
+
+.btn-primary{
+    background-color:#9fb7c9;
+    border-color:#9fb7c9;
+    color: black;
+}
+
+.servicio-select{
+    border:none;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.servicio-select:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.servicio-select i{
+    color:#9fb7c9;
+}
+
+.servicio-select h3{
+    color:black;
+}
+
+.servicio-select p{
+    color:#666;
+}
+
+.form-select{
+    border-radius:10px;
+}
+
