@@ -756,6 +756,147 @@ header{
     columns: 2;
 }
 
+/* =========================================================
+   ANIMACIONES GSAP (ver dist/js/animaciones.js)
+   ========================================================= */
+
+/* barra de progreso de lectura */
+#barra-progreso{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--degradado);
+    transform: scaleX(0);
+    transform-origin: left center;
+    z-index: 1040;
+}
+
+/* palabras del título del hero (cada una sale de una "ventana") */
+.palabra{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding-bottom: .08em;
+}
+
+.palabra > *{
+    display: inline-block;
+}
+
+/* ---------- SCROLL HORIZONTAL ---------- */
+
+.scroll-horizontal{
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+/* en celular: deslizar con el dedo + "imán" (scroll-snap) */
+.pista{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem max(16px, calc((100vw - 1296px) / 2 + 12px)) 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.pista::-webkit-scrollbar{
+    display: none;
+}
+
+.pista-item,
+.pista-intro{
+    flex: 0 0 min(82vw, 380px);
+    scroll-snap-align: center;
+}
+
+.pista-item .card{
+    height: 100%;
+}
+
+.pista-item .card img{
+    height: 300px;
+}
+
+.pista-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.pista-intro h2{
+    margin: 1rem 0;
+    line-height: 1.15;
+}
+
+.pista-intro p{
+    color: var(--texto-suave);
+}
+
+.pista-intro .bienvenida{
+    align-self: flex-start;
+}
+
+/* en escritorio GSAP mueve la pista: quitamos el scroll nativo */
+.pista-animada .pista{
+    overflow: visible;
+    scroll-snap-type: none;
+    width: max-content;
+}
+
+.pista-animada .pista-item{
+    flex-basis: 400px;
+}
+
+.pista-animada .pista-intro{
+    flex-basis: 460px;
+}
+
+/* mientras las tarjetas 3D entran inclinadas, no deben ensanchar la página */
+.seccion-3d{
+    overflow-x: clip;
+}
+
+/* ---------- TILT 3D ---------- */
+
+/* GSAP controla el transform, así que quitamos la transición CSS de transform */
+.tilt{
+    transition: box-shadow .35s ease !important;
+    transform-style: preserve-3d;
+    will-change: transform;
+    position: relative;
+}
+
+.tilt:hover{
+    box-shadow: var(--sombra-hover) !important;
+}
+
+/* brillo que sigue al mouse */
+.tilt::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, .45), transparent 55%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    mix-blend-mode: soft-light;
+}
+
+.tilt:hover::after{
+    opacity: 1;
+}
+
+/* el icono "flota" por delante de la tarjeta (profundidad real en 3D) */
+.ventaja-card.tilt i,
+.ventaja-card.tilt h4{
+    transform: translateZ(45px);
+}
+
 /* =========================
    RESPONSIVE
    ========================= */
