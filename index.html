@@ -7,6 +7,9 @@
     <meta name="author" content="Franz">
     <meta name="keywords" content="bootstrap, css, html, ejemplo, página web">
     <title>AlmaStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/bootstrap-icons.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -18,7 +21,7 @@
     <header>  
        <nav class="navbar navbar-expand-lg">
        <div class="container">
-        <a class="display-6 text-white" href="../index.html">
+        <a class="display-6 text-white" href="index.html">
           <h1 class="display-5 text-white fw-bold">AlmaStudio</h1></a>
 
        <!--boton hamburguesa: solo visible en pantallas pequeñas-->
@@ -40,16 +43,15 @@
 
     <main>
         <!---bienvenido-->
- <section class="py-2">
+ <section class="hero">
         <div class="container">
-          <div class="row align-items-center g-4">
+          <div class="row align-items-center g-5">
             
             <div class="col-12 col-lg-6" data-aos="flip-right">
               <h5><span class="badge bienvenida">BIENVENIDOS</span></h5>
-              <h1 class="display-8 text-white fw-bold">Transformamos datos, <br>
-                ideas y contenido en resultados.</h1>
+              <h1 class="text-white fw-bold">Transformamos datos, <br>
+                ideas y contenido en <span class="texto-degradado">resultados.</span></h1>
               <p class="text-white">En AlmaStudio combinamos analisis de datos, estrategias digitales y creacion de contenido para ayudar a tu negocio a crecer y tomar mejores decisiones</p>
-              <p class="text-white"> ...</p>
               <a href="page/Servicios.html" class="btn btn-primary mt-3"> <b>Conoce nuestros servicios</b></a>
             </div>
            
@@ -95,7 +97,6 @@
           </div>
         </div>
       </section>
-      <br> <br> <br>
 
       <!---seccion nuestro servicios-->
            <section class="Servicios" id="Servicios" >
@@ -198,13 +199,13 @@
 </section>
 
 <!--Porque Elegirnos-->
-<section class="porque-elegirnos py-5 bg-light">
+<section class="porque-elegirnos py-5">
   <div class="container">
     <h2 class="text-center fw-bold mb-5" data-aos="zoom-in">¿Por qué elegir AlmaStudio?</h2>
     <div class="row g-4">
 
       <div class="col-md-4 text-center" data-aos="zoom-in">
-        <div class="ventaja-card" text-center p-4>
+        <div class="ventaja-card">
         <i class="bi bi-bar-chart-fill fs-1"></i>
         <h4 class="mt-3">Analisis</h4>
         <p>Convertimos datos en informacion util.</p>
@@ -212,7 +213,7 @@
       </div>
 
       <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="200">
-        <div class="ventaja-card" text-center p-4>
+        <div class="ventaja-card">
         <i class="bi bi-lightbulb-fill fs-1"></i>
         <h4 class="mt-3">Estrategia</h4>
         <p>Ideas orientadas a resultados.</p>
@@ -220,7 +221,7 @@
       </div>
 
         <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-delay="400">
-        <div class="ventaja-card" text-center p-4>
+        <div class="ventaja-card">
         <i class="bi bi-megaphone-fill fs-1"></i>
         <h4 class="mt-3">Contenido</h4>
         <p>Comunicación que conecta.</p>
@@ -234,9 +235,9 @@
 
 
       <!---preguntas frecuentes-->
-      <section class="preguntas-section py-5">
+      <section class="preguntas-section py-5 px-3 mt-5">
         <div class="container">
-          <h2 class="text-center" fw-bold mb-4><b>Preguntas Frecuentes</b></h2>
+          <h2 class="text-center fw-bold">Preguntas Frecuentes</h2>
           <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
            <h2 class="accordion-header">
@@ -246,6 +247,7 @@
            </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body text-black">Ofrecemos analisis de datos, dashboards interactivos, marketing digital, gestion administrativa y creacion de contenido.</div>
+          </div>
           </div>
 
           <div class="accordion-item">
@@ -270,15 +272,13 @@
          </div>
         </div>
 
-          </div>
-
         </div>
 
       </section>
 
     <!---seccion 3D-->
 
-    <section class="py-5">
+    <section class="py-5 mt-5">
       <div class="container">
         <h2 class="text-center mb-5 text-white animate__animated animate__pulse">
           <b>Nuestros servicios destacados</b>
@@ -436,4 +436,4 @@ target="_blank">
        AOS.init();
     </script>
   </body>
-</html>
+</html>
